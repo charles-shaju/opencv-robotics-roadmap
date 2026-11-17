@@ -26,11 +26,13 @@ A camera adds visual information.
 
 
 **LiDAR perception**
+
 ![alt text](images/image-1.png)
 
 Measures distances and geometric structure.
 
 **Camera perception**
+
 ![alt text](images/image-1.png)!
 
 Identifies visual features, object categories and scene details.
