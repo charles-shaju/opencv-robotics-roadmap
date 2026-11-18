@@ -1,19 +1,22 @@
+from pathlib import Path
+
 import cv2
 
-image=cv2.imread("Tony.jpeg")
+image_path = Path(__file__).with_name("Tony.jpeg")
+image = cv2.imread(str(image_path))
 
 if image is None:
-  raise FileNotFoundError("Could not find the file")
+    raise FileNotFoundError(f"Could not find {image_path}")
 
-print("Shape: ", image.shape)
-print("Data Type: ",image.dtype)
-print("Height: ",image.shape[0])
-print("Width: ",image.shape[1])
+print("Shape:", image.shape)
+print("Data type:", image.dtype)
+print("Height:", image.shape[0])
+print("Width:", image.shape[1])
+
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow("Original Image", image)
-gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-cv2.imshow("Back&White Image", gray)
+cv2.imshow("Grayscale Image", gray)
 cv2.waitKey(0)
-
 cv2.destroyAllWindows()
 

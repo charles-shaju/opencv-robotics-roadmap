@@ -327,7 +327,7 @@ source .venv/bin/activate
 ```bash
 python -m pip install --upgrade pip
 
-python -m pip install opencv-python numpy matplotlib
+python -m pip install -r requirements.txt
 ```
 
 Later stages may require additional dependencies, including PyTorch, YOLO and ROS 2 packages.

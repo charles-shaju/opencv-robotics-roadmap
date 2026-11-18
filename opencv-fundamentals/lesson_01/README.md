@@ -162,17 +162,17 @@ code read_image.py
 ```
 
 
-Download or copy any JPG image into this folder and name it Toney.jepg.
+Download or copy any JPG image into this folder and name it `Tony.jpeg`.
 
 ```python
 
 import cv2
 
 # Read image from disk
-image = cv2.imread("sample.jpg")
+image = cv2.imread("Tony.jpeg")
 
 if image is None:
-    raise FileNotFoundError("Could not load sample.jpg")
+    raise FileNotFoundError("Could not load Tony.jpeg")
 
 # Inspect image properties
 print("Shape:", image.shape)
