@@ -77,7 +77,7 @@ The roadmap is divided into six stages, progressing from image processing fundam
 | Lesson | Topic |
 |---|---|
 | 01 | [Introduction to Computer Vision and OpenCV](opencv-fundamentals/lesson_01/README.md) |
-| 02 | NumPy for Computer Vision and Pixel Manipulation |
+| 02 | [NumPy for Computer Vision and Pixel Manipulation](opencv-fundamentals/lesson_02/README.md) |
 | 03 | Image Operations and Transformations |
 | 04 | Color Spaces, Thresholding and Masking |
 | 05 | Image Filtering and Morphological Operations |
